@@ -65,7 +65,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
 
         <EditText
-            android:id="@+id/your_edittext"
+            android:id="@+id/registerET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_edittext"
@@ -85,7 +85,7 @@
             app:layout_constraintTop_toBottomOf="@+id/imageButton4" />
 
         <EditText
-            android:id="@+id/passwordET"
+            android:id="@+id/passwordRegisterET"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/rounded_edittext"
@@ -117,7 +117,14 @@
             android:layout_marginTop="20dp"
             tools:ignore="Deprecated" />
 
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"/>
+
         <Button
+            android:id="@+id/buttonRegisterBtn"
             android:layout_width="325dp"
             android:layout_height="50dp"
             android:layout_gravity="center"
@@ -129,10 +136,11 @@
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:layout_gravity="center"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="20dp"
             android:text="Have an Account?" />
 
         <TextView
+            android:id="@+id/signInTV"
             android:layout_width="wrap_content"
             android:layout_height="20dp"
             android:textColor="#357C3C"
