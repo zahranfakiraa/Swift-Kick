@@ -48,7 +48,6 @@ public class HomeActivity2 extends AppCompatActivity {
         else{
             textView.setText(user.getEmail());
         }
-
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -57,6 +56,11 @@ public class HomeActivity2 extends AppCompatActivity {
                 startActivity(intent);
                 finish();
             }
+        });
+        Button btnShowCart = findViewById(R.id.btn_show_cart);
+        btnShowCart.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity2.this, CartActivity.class);
+            startActivity(intent);
         });
     }
 }
